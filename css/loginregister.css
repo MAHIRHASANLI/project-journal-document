@@ -1,0 +1,148 @@
+body {
+  background-color: rgb(235, 233, 225);
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Jost", sans-serif;
+}
+
+main {
+  min-height: 100vh;
+  /* background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.register-form {
+  background: #fff;
+  padding: 50px 60px 20px 50px;
+  box-shadow: 0px 10px 30px 0px rgba(13, 12, 13, 0.2);
+  min-width: 700px;
+  min-height: 100vh;
+}
+
+.form-item {
+  padding-top: 35px;
+  padding-bottom: 60px;
+}
+
+label {
+  display: block;
+  font-size: 17px;
+  margin-bottom: 6px;
+  color: #140c40;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: left;
+}
+
+.login-checkbox {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-checkbox input {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #c9c9c9;
+}
+
+input {
+  border: 1px solid #c9c9c9;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 25px;
+  padding: 0 25px;
+  color: #000;
+  outline: none;
+}
+
+.login-checkbox label {
+  display: inline;
+  font-size: 17px;
+  color: #140c40;
+  text-transform: capitalize;
+  font-weight: 500;
+  text-align: left;
+}
+
+input:active,
+input:focus {
+  border: 1px solid #5a4e8c;
+}
+
+button {
+  background: #5a4e8c;
+  height: 60px;
+  padding: 10px 43px;
+  border: 0;
+  color: #fff;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 0px;
+}
+
+.register-heading {
+  text-align: center;
+}
+
+.register-heading h2 {
+  color: #140c40;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  display: block;
+  text-transform: capitalize;
+}
+
+p,
+a {
+  font-family: "Jost", sans-serif;
+  color: #6a6a6a;
+  font-size: 16px;
+  line-height: 30px;
+  margin-bottom: 15px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.register-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+a {
+  color: #ea5252;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 760px) {
+  .register-form {
+    padding: 40px 20px 20px 26px;
+    min-width: 90%;
+  }
+
+  .form-item {
+    padding-top: 28px;
+    padding-bottom: 20px;
+  }
+
+  .register-footer p {
+    margin-bottom: 28px;
+  }
+}
