@@ -20,14 +20,15 @@
 const searchInput = document.getElementById("search-input");
 const searchIcon = document.getElementById("search-icon");
 const searchDiv = document.getElementsByClassName("header-search-div");
+const pagesLink = document.getElementsByClassName("pages-link");
 
 searchIcon.addEventListener("click", () => {
     // searchDiv.classList("header-search")
-    searchDiv.style.width = "350px";
-    searchDiv.style.height = "45px";
-    searchDiv.style.padding = "10px 30px";
-    searchDiv.style.border = "1px solid #b9b9b9";
-    // searchInput.style.display = "block"
+    // searchDiv.style.width = "350px";
+    // searchDiv.style.height = "45px";
+    // searchDiv.style.padding = "10px 30px";
+    searchInput.style.width = "250px"
+    searchInput.focus();
 })
 
 /* ///////////// */
@@ -37,15 +38,24 @@ $('.owl-carousel').owlCarousel({
     margin: 10,
     nav: true,
     dots: false,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
     responsive: {
         0: {
             items: 1
         },
         600: {
-            items: 3
+            items: 2
         },
         1000: {
             items: 3
         }
     }
+})
+$('.play').on('click', function () {
+    owl.trigger('play.owl.autoplay', [5000])
+})
+$('.stop').on('click', function () {
+    owl.trigger('stop.owl.autoplay')
 })
