@@ -15,6 +15,9 @@ body {
 a {
   text-decoration: none;
 }
+.nav-mobile {
+  display: none;
+}
 
 .navbar {
   width: 100%;
@@ -123,8 +126,10 @@ a {
   height: 48px;
   padding: 10px 20px;
   border-radius: 8px;
-  color: #5a4e8c;
+  color: #ffff;
+  /* background: #5a4e8c; */
   background: white;
+  color: black;
   border: none;
   font-size: 16px;
   font-weight: 500;
@@ -221,8 +226,46 @@ a {
   .navbar {
     display: none;
   }
+  .nav-link {
+    position: relative;
+    z-index: 995;
+  }
   .nav-links_item {
     display: none;
+  }
+  .nav-mobile {
+    display: block;
+    position: absolute;
+    top: -550px;
+    background-color: #4c4c4c;
+    width: 100%;
+    left: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: -1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all 0.4s ease-out 0s;
+  }
+  .nav-mobile-links li {
+    margin: 2px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease-out 0s;
+  }
+  .nav-mobile-links a {
+    font-size: 13px;
+    color: #fff;
+    transition: all 0.3s ease-out 0s;
+  }
+  .nav-mobile-links li:hover {
+    background-color: #cccccc;
+  }
+  .nav-mobile-links li:hover a {
+    color: #4c4c4c;
+  }
+  .buttons {
+    margin: 50px 10px 30px;
   }
   .sidebar-right {
     display: none;
@@ -232,10 +275,9 @@ a {
   }
   .nav-links {
     height: 60px;
-
     margin: 0;
     justify-content: flex-end;
-    box-shadow: 0 10px 15px rgba(25, 25, 25, 0.1);
+    background-color: #4c4c4c;
   }
   .hamburger-menu {
     display: block;

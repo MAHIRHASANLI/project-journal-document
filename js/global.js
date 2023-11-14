@@ -1,17 +1,19 @@
 const hamburgerMenu = document.querySelector(".hamburger-menu");
 const hamburgerIcons = document.querySelector(".hamburger-btn")
+const navbar = document.querySelector("#navbar");
+const navMobile = document.querySelector(".nav-mobile")
 
-hamburgerMenu.addEventListener("click", () => {
-    if (hamburgerIcons.className.includes("fa-bars")) {
-        hamburgerIcons.classList.remove("fa-bars");
-        hamburgerIcons.classList.add("fa-x");
-    }
-    else {
-        hamburgerIcons.classList.add("fa-bars");
-        hamburgerIcons.classList.remove("fa-x");
-    }
-    // else if (hamburgerIcons.classList === "fa-bars") hamburgerIcons.classList.add("fa-x");
-})
+// hamburgerMenu.addEventListener("click", () => {
+//     if (hamburgerIcons.className.includes("fa-bars")) {
+//         hamburgerIcons.classList.remove("fa-bars");
+//         hamburgerIcons.classList.add("fa-x");
+//     }
+//     else {
+//         hamburgerIcons.classList.add("fa-bars");
+//         hamburgerIcons.classList.remove("fa-x");
+//     }
+//     // else if (hamburgerIcons.classList === "fa-bars") hamburgerIcons.classList.add("fa-x");
+// })
 
 const searchInput = document.getElementById("search-input");
 const searchIcon = document.getElementById("search-icon");
@@ -25,4 +27,18 @@ searchIcon.addEventListener("click", () => {
     // searchDiv.style.padding = "10px 30px";
     searchInput.style.width = "250px"
     searchInput.focus();
+})
+
+// Hamburger Menu
+hamburgerMenu.addEventListener("click", () => {
+    if (hamburgerIcons.className.includes("fa-bars")) {
+        hamburgerIcons.classList.remove("fa-bars");
+        hamburgerIcons.classList.add("fa-x");
+        navMobile.style.top = "60px"
+    }
+    else {
+        hamburgerIcons.classList.add("fa-bars");
+        hamburgerIcons.classList.remove("fa-x");
+        navMobile.style.top = "-550px"
+    }
 })
