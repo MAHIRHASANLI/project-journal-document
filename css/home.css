@@ -16,7 +16,6 @@
 /* First Section */
 
 #first-section {
-  /* padding-left: 3px; */
   margin: 0;
   width: 100%;
   position: relative;
@@ -45,7 +44,7 @@
 }
 
 .owl-carousel.owl-theme .item img {
-  /* height: 220px; */
+  height: 170px;
 }
 
 #first-section h3 a {
@@ -164,114 +163,87 @@
   font-size: 24px;
 }
 
-/* @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .testimonial-section {
-    background: #f3ead8;
-    width: 100%;
-    position: relative;
-    padding-top: 70px;
-    padding-bottom: 65px;
-  }
-
-  .carousel-item-top h2 {
-    font-size: 34px;
-    font-weight: 500;
-    color: #3c3b37;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .carousel-item-top p {
-    line-height: 1.5;
-    margin-bottom: 32px;
-    color: #3c3b37;
-    font-weight: 400;
-    text-align: center;
-
-    font-size: 18px;
-    padding: 0px;
-    padding: 0px 80px;
-  }
+/* .article-headings */
+.article-headings {
+  padding: 100px 0 50px;
+}
+.article-headings-item {
+  margin-top: 40px;
+}
+.article-headings-links {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
 }
 
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-  .testimonial-section {
-    background: #f3ead8;
-    width: 100%;
-    position: relative;
-    padding-top: 96px;
-    padding-bottom: 81px;
-  }
-
-  .carousel-item-top h2 {
-    font-size: 34px;
-    font-weight: 500;
-    color: #3c3b37;
-    margin-bottom: 30px;
-    text-align: center;
-  }
-
-  .carousel-item-top p {
-    line-height: 1.5;
-    color: #3c3b37;
-    font-weight: 400;
-    text-align: center;
-
-    font-size: 18px;
-    padding: 0px 30px;
-    margin-bottom: 30px;
-  }
+.article-headings-links li {
+  border: 1px solid #0b456b;
+  border-radius: 20px;
+  padding: 10px 25px;
+  transition: linear 0.3s all;
+  cursor: pointer;
+}
+.article-headings-links li:hover {
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-@media only screen and (max-width: 576px) {
-  .testimonial-section {
-    background: #f3ead8;
-    width: 100%;
-    position: relative;
-    padding-top: 96px;
-    padding-bottom: 81px;
-  }
+.article-headings-links a {
+  font-weight: 600;
+}
 
-  .carousel-item-top h2 {
-    font-weight: 500;
-    color: #3c3b37;
-    text-align: center;
+.article--post {
+  padding: 50px 25px;
+  border-bottom: 1px dashed black;
+}
+.article--post-header {
+  display: flex;
+  gap: 30px;
+}
+.article--post-footer {
+  margin-top: 30px;
+}
+.article--post figure {
+  height: 80px;
+  width: 90px;
+  border: solid var(--bio-image-border-width, 5px)
+    var(--bio-image-border-color, #0b456b);
+  border-radius: inherit;
+  transform: scale(0.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
+  transform-origin: 0 100%;
+  transition: transform 0.2s ease-out;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.article--post img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.article--post a {
+  text-decoration: underline;
+}
 
-    font-size: 29px;
-    margin-bottom: 20px;
-  }
-
-  .carousel-item-top p {
-    line-height: 1.5;
-    color: #3c3b37;
-    font-weight: 400;
-    text-align: center;
-
-    font-size: 15px;
-    padding: 0px;
-    margin-bottom: 30px;
-  }
-  .carousel-item-bottom span {
-    line-height: 1.5;
-    margin-bottom: 32px;
-    color: #3c3b37;
-    font-weight: 400;
-    text-align: center;
-    font-size: 26px;
-  }
-
-  .carousel-item-bottom p {
-    line-height: 1.5;
-    margin-bottom: 32px;
-    font-size: 14px;
-    color: #3c3b37;
-    font-weight: 400;
-    text-align: center;
-  }
-  .owl-nav {
-    display: none;
-  }
-} */
+.article--post-header a {
+  color: #0b456b;
+  font-weight: 700;
+  font-size: calc(0.9em + 0.1vw);
+  transition: color 0.1s linear;
+  font-size: 18px;
+}
+.article--post-header a:hover {
+  color: #0b456b;
+}
+.article--post-header h2 {
+  margin-top: 10px;
+}
+.article--post-header h2 a {
+  color: #666;
+  color: black;
+  line-height: 37.992px;
+  font-size: 31.66px;
+  text-decoration: none;
+}
 
 /* Topic Section */
 .topics {
@@ -405,6 +377,47 @@
     padding: 0px 80px;
   }
 
+  .article-headings {
+    padding: 80px 0 50px;
+  }
+
+  .article-headings-links {
+    gap: 20px;
+  }
+
+  .article-headings-links li {
+    padding: 10px 20px;
+  }
+
+  .article-headings-links a {
+    font-weight: 600;
+  }
+
+  .article--post {
+    padding: 50px 20px;
+  }
+  .article--post-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .article--post-footer {
+    margin-top: 30px;
+  }
+
+  .article--post figure {
+    height: 70px;
+    width: 70px;
+  }
+
+  .article--post-header a {
+    font-size: 18px;
+  }
+
+  .article--post-header h2 a {
+    line-height: 37.992px;
+    font-size: 30px;
+  }
+  /* //// */
   .topics {
     padding: 100px 0 100px;
   }
@@ -459,7 +472,46 @@
     padding: 0px 30px;
     margin-bottom: 30px;
   }
+  .article-headings {
+    padding: 70px 0 50px;
+  }
 
+  .article-headings-links {
+    gap: 15px;
+  }
+
+  .article-headings-links li {
+    padding: 10px 15px;
+  }
+
+  .article-headings-links a {
+    font-weight: 600;
+  }
+
+  .article--post {
+    padding: 50px 0px;
+  }
+  .article--post-header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .article--post-footer {
+    margin-top: 20px;
+  }
+
+  .article--post figure {
+    height: 70px;
+    width: 70px;
+  }
+
+  .article--post-header a {
+    font-size: 17px;
+  }
+
+  .article--post-header h2 a {
+    line-height: 35.992px;
+    font-size: 26px;
+  }
   .topics {
     padding: 70px 0 70px;
   }
@@ -529,7 +581,50 @@
     font-weight: 400;
     text-align: center;
   }
+  .article-headings {
+    padding: 70px 0 50px;
+  }
 
+  .article-headings-links {
+    gap: 10px;
+  }
+
+  .article-headings-links li {
+    padding: 8px 12px;
+  }
+
+  .article-headings-links a {
+    font-weight: 600;
+  }
+
+  .article--post {
+    padding-top: 30px;
+  }
+  .article--post-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .article--post-footer {
+    margin-top: 15px;
+  }
+
+  .article--post figure {
+    height: 60px;
+    width: 60px;
+  }
+
+  .article--post-header a {
+    font-size: 16px;
+  }
+
+  .article--post-header h2 a {
+    line-height: 35.992px;
+    font-size: 22px;
+    width: 100%;
+  }
+  .article--post-footer p {
+    font-size: 14px;
+  }
   .topics {
     padding: 80px 0 50px;
   }

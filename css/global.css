@@ -58,16 +58,6 @@ a {
   align-items: center;
 }
 
-.nav-links_item li {
-  /* padding: 0 10px; */
-  /* border-right: 1px solid #ffffff; */
-  position: relative;
-}
-
-.nav-links_item li:first-child {
-  padding-left: 0;
-}
-
 .nav-links_item li a {
   font-size: 12px;
   font-weight: 500;
@@ -85,12 +75,8 @@ li.links::before {
   content: "|";
   font-size: 14px;
   padding: 0 25px;
-  /* padding-right: 12px; */
 }
 
-li.links {
-  /* padding-right: 25px; */
-}
 
 .nav-links_item a:hover {
   color: #8994a3;
@@ -119,7 +105,6 @@ li.links {
   color: white;
   width: 0px;
   outline: none;
-  /* display: none; */
   transition: linear 0.3s all;
 }
 
