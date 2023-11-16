@@ -2,29 +2,24 @@ const hamburgerMenu = document.querySelector(".hamburger-menu");
 const hamburgerIcons = document.querySelector(".hamburger-btn")
 const navbar = document.querySelector("#navbar");
 const navMobile = document.querySelector(".nav-mobile")
+const searchInput = document.querySelector(".search-input");
+const searchIcon = document.querySelector(".search-icon");
 
-// hamburgerMenu.addEventListener("click", () => {
-//     if (hamburgerIcons.className.includes("fa-bars")) {
-//         hamburgerIcons.classList.remove("fa-bars");
-//         hamburgerIcons.classList.add("fa-x");
-//     }
-//     else {
-//         hamburgerIcons.classList.add("fa-bars");
-//         hamburgerIcons.classList.remove("fa-x");
-//     }
-//     // else if (hamburgerIcons.classList === "fa-bars") hamburgerIcons.classList.add("fa-x");
-// })
+// window.onscroll = function () { scrollFunction() };
 
-const searchInput = document.getElementById("search-input");
-const searchIcon = document.getElementById("search-icon");
-const searchDiv = document.getElementsByClassName("header-search-div");
-const pagesLink = document.getElementsByClassName("pages-link");
+// function scrollFunction() {
+//     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+//         navbar.style.position = "sticky";
+//         navbar.style.top = "0";
+//         navbar.style.transition = "1s linear"
+//     }
+//     else navbar.style.position = "relative";
+// }
+
+
 
 searchIcon.addEventListener("click", () => {
-    // searchDiv.classList("header-search")
-    // searchDiv.style.width = "350px";
-    // searchDiv.style.height = "45px";
-    // searchDiv.style.padding = "10px 30px";
+    console.log("dd");
     searchInput.style.width = "250px"
     searchInput.focus();
 })
@@ -35,10 +30,12 @@ hamburgerMenu.addEventListener("click", () => {
         hamburgerIcons.classList.remove("fa-bars");
         hamburgerIcons.classList.add("fa-x");
         navMobile.style.top = "60px"
+        navMobile.style.boxShadow = "rgba(0, 0, 0, 0.45) 0px 250px 250px -20px";
     }
     else {
         hamburgerIcons.classList.add("fa-bars");
         hamburgerIcons.classList.remove("fa-x");
-        navMobile.style.top = "-550px"
+        navMobile.style.top = "-550px";
+        navMobile.style.boxShadow = "none"
     }
 })
