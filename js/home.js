@@ -23,10 +23,10 @@
 
 $('.owl-carousel').owlCarousel({
     loop: true,
-    margin: 10,
+    margin: 30,
     nav: true,
     dots: false,
-    autoplay: true,
+    autoplay: false,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
@@ -46,4 +46,21 @@ $('.play').on('click', function () {
 })
 $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
+})
+
+
+
+// window.onscroll = function () { scrollFunction() };
+
+// function scrollFunction() {
+//     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//       mybutton.style.display = "block";
+//     } else {
+//       mybutton.style.display = "none";
+//     }
+//   }
+let backToTop = document.getElementById("backToTop");
+backToTop.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 })

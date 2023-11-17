@@ -77,7 +77,6 @@ li.links::before {
   padding: 0 25px;
 }
 
-
 .nav-links_item a:hover {
   color: #8994a3;
   transition: linear 0.3s all;
@@ -173,7 +172,7 @@ li.links::before {
   padding-left: 10px;
   position: sticky;
   top: 85px;
-  z-index: 100;
+  z-index: 10;
 }
 
 .sidebar-item {
@@ -212,18 +211,114 @@ li.links::before {
 }
 
 /* FOOTER */
-.footer {
-  background-color: #0b456b;
-  color: #ffffff;
-  font-size: 14px;
-  min-height: 40px;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Poppins", sans-serif;
+.footer-head {
+  background-color: #162238;
+  width: 100%;
+  padding: 40px 20px 20px 20px;
 }
 
+.footer .text-title {
+  color: #fff;
+  border-left: 4px solid #ea5252;
+}
+
+.footer .text-description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.footer .text-title span {
+  text-align: left;
+  font-size: 25px;
+  margin: 0;
+  padding: 0 0 0 20px;
+  height: 70px;
+  line-height: 70px;
+}
+
+.footer .text-description li {
+  border-color: #fff;
+  float: left;
+  margin-right: 10px;
+  margin-top: 10px;
+  padding: 5px 0;
+  border: 3px solid white;
+  text-transform: uppercase;
+  transition: linear 0.3s all;
+}
+
+.footer .text-description a {
+  color: #fff;
+  font-size: 12px;
+  padding: 12px 13px;
+  font-weight: 500;
+  transition: linear 0.3s all;
+}
+.footer .text-description li:hover {
+  border-color: #ea5252;
+  background-color: white;
+}
+.footer .text-description li:hover a {
+  color: #ea5252;
+}
+
+.carousel-listing-box {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 95%;
+  transform: translateX(-50%);
+}
+
+.listing-box-item {
+  background: #ea5252;
+  opacity: 0.9;
+  color: #fff;
+  padding: 10px 20px 10px 20px;
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+
+.listing-box-item:hover {
+  background: #fff;
+  color: #ea5252;
+}
+
+.listing-box-item:hover .title {
+  text-decoration: underline;
+}
+
+.listing-box-item .date {
+  color: #162238;
+  font-size: 14px;
+  display: inline-block;
+  margin-bottom: 8px;
+  margin-right: 10px;
+}
+
+.listing-box-item .title {
+  line-height: 1.2em;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.listing-box-item .read_more span {
+  color: #ccc;
+}
+
+.footer .footer-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100px;
+}
+
+.footer-bottom a {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
 @media only screen and (max-width: 850px) {
   .navbar {
     display: none;
@@ -310,5 +405,20 @@ li.links::before {
 
   .hamburger-menu i {
     font-size: 20px;
+  }
+
+  .footer .carousel-inner {
+    margin: 30px 0;
+  }
+
+  .footer .text-title span {
+    font-size: 20px;
+  }
+
+  .footer .text-description {
+    font-size: 12px;
+  }
+  .listing-box-item .title {
+    font-size: 18px;
   }
 }
