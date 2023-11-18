@@ -26,7 +26,7 @@ $('.owl-carousel').owlCarousel({
     margin: 30,
     nav: true,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
@@ -61,6 +61,6 @@ $('.stop').on('click', function () {
 //   }
 let backToTop = document.getElementById("backToTop");
 backToTop.addEventListener('click', () => {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
+    var body = $("html, body");
+    body.stop().animate({ scrollTop: 0 }, 500, 'swing',{behavior: 'smooth'});
 })

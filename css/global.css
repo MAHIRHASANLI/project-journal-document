@@ -214,7 +214,7 @@ li.links::before {
 .footer-head {
   background-color: #162238;
   width: 100%;
-  padding: 40px 20px 20px 20px;
+  padding: 45px 20px 35px 20px;
 }
 
 .footer .text-title {
@@ -298,7 +298,6 @@ li.links::before {
 }
 
 .listing-box-item .title {
-  line-height: 1.2em;
   font-size: 20px;
   padding-bottom: 10px;
 }
@@ -313,6 +312,10 @@ li.links::before {
   height: 100px;
 }
 
+.footer-bottom p {
+  margin: 0;
+  text-decoration: underline;
+}
 .footer-bottom a {
   text-transform: uppercase;
   font-size: 12px;
@@ -406,11 +409,16 @@ li.links::before {
   .hamburger-menu i {
     font-size: 20px;
   }
-
+  .footer-head {
+    padding: 40px 20px 50px 20px;
+  }
   .footer .carousel-inner {
     margin: 30px 0;
   }
-
+  .footer .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
   .footer .text-title span {
     font-size: 20px;
   }

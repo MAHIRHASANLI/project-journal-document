@@ -95,6 +95,11 @@
 #first-section p {
   color: #6a6a6a;
   width: 95%;
+  font-size: 15px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .read_more {
@@ -274,16 +279,16 @@
 }
 .article--post-footer {
   margin-top: 30px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
 .article--post figure {
   height: 80px;
   width: 90px;
-  border: solid var(--bio-image-border-width, 5px)
-    var(--bio-image-border-color, #0b456b);
-  border-radius: inherit;
-  transform: scale(0.84) translateX(15%) rotateZ(calc(-1 * (11 * 1deg)));
-  transform-origin: 0 100%;
-  transition: transform 0.2s ease-out;
+  border: 5px solid #0b456b;
+  transform: rotate(10deg);
   overflow: hidden;
   box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
@@ -568,6 +573,7 @@
   }
   .article--post-footer {
     margin-top: 20px;
+    -webkit-line-clamp: 3;
   }
 
   .article--post figure {
@@ -677,6 +683,7 @@
   }
   .article--post-footer {
     margin-top: 15px;
+    -webkit-line-clamp: 3;
   }
 
   .article--post figure {
