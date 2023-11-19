@@ -27,7 +27,7 @@ $('.owl-carousel').owlCarousel({
     nav: true,
     dots: false,
     autoplay: true,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 4000,
     autoplayHoverPause: true,
     responsive: {
         0: {
@@ -42,7 +42,7 @@ $('.owl-carousel').owlCarousel({
     }
 })
 $('.play').on('click', function () {
-    owl.trigger('play.owl.autoplay', [5000])
+    owl.trigger('play.owl.autoplay', [6000])
 })
 $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
@@ -59,8 +59,4 @@ $('.stop').on('click', function () {
 //       mybutton.style.display = "none";
 //     }
 //   }
-let backToTop = document.getElementById("backToTop");
-backToTop.addEventListener('click', () => {
-    var body = $("html, body");
-    body.stop().animate({ scrollTop: 0 }, 500, 'swing',{behavior: 'smooth'});
-})
+

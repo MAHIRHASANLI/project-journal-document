@@ -4,19 +4,7 @@ const navbar = document.querySelector("#navbar");
 const navMobile = document.querySelector(".nav-mobile")
 const searchInput = document.querySelector(".search-input");
 const searchIcon = document.querySelector(".search-icon");
-
-// window.onscroll = function () { scrollFunction() };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
-//         navbar.style.position = "sticky";
-//         navbar.style.top = "0";
-//         navbar.style.transition = "1s linear"
-//     }
-//     else navbar.style.position = "relative";
-// }
-
-
+let backToTop = document.getElementById("backToTop");
 
 searchIcon.addEventListener("click", () => {
     console.log("dd");
@@ -38,4 +26,11 @@ hamburgerMenu.addEventListener("click", () => {
         navMobile.style.top = "-550px";
         navMobile.style.boxShadow = "none"
     }
+})
+
+
+// backToTop
+backToTop.addEventListener('click', () => {
+    var body = $("html, body");
+    body.stop().animate({ scrollTop: 0 }, 500, 'swing', { behavior: 'smooth' });
 })

@@ -10,9 +10,20 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&family=Dancing+Script:wght@400;500;600;700&family=Inconsolata:wght@200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+Vithkuqi:wght@400;500;600&family=Oxygen:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- .........OwlCarousel2......... -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Css File -->
     <link rel="stylesheet" href="./css/global.css">
@@ -24,7 +35,7 @@
     <!-- Nav Img -->
     <div class="navbar">
         <div class="nav-image">
-            <img src="images/nav-bg-new.jpg" alt="">
+            <img src="images/nav-bg-img2.jpg" alt="">
         </div>
     </div>
     <!--Nav Link -->
@@ -80,10 +91,10 @@
     <div class="sections">
         <!-- layout-left -->
         <div class="detail-section">
-            <div class="detail-head">
+            <div class="detail-head container">
                 <h4>İqtisadiyyat və Biznes Jurnalı</h4>
             </div>
-            <div class="detail-main">
+            <div class="detail-main container">
                 <div class="detail-main-left">
                     <div class="detail-photo">
                         <img src="https://aebjournal.org/images/JournalCover10.jpg" alt="img">
@@ -97,7 +108,7 @@
                     <p>Nəşriyyatçı:</p>
                 </div>
             </div>
-            <div class="detail-bottom">
+            <div class="detail-bottom container">
                 <p> Journal of Applied Economics and Business (JAEB) beynəlxalq resenziyalı,
                     açıq giriş
                     orijinal tədqiqat məqalələri dərc edən akademik jurnal. Bilik üçün bir forum təqdim edir
@@ -128,10 +139,124 @@
                     repudiandae.
                 </p>
             </div>
+            <div class="detail--post-slider">
+                <div class="section-tittle">
+                    <h2>
+                        Oxşar Məqalələr
+                    </h2>
+                </div>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <a href="detail.html" class="item-img position-relative">
+                            <img src="https://plus.unsplash.com/premium_photo-1699973057084-c5e2b3478fb8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHx8"
+                                alt="">
+                        </a>
+                        <div>
+                            <h3>
+                                <a href="detail.html" class="post-name">
+                                    Sports Information
+                                </a>
+                            </h3>
+                            <div class="post_details">
+                                <li class="category">SPORT</li>
+                                <li class="date">Oktyabr 26, 2023</li>
+                            </div>
+                            <p>DevTools-da Lighthouse kimi pulsuz hesabat alətinə daxil olmaq, əsas mövzuda
+                                darboğazları.
+                                DevTools-da Lighthouse kimi pulsuz hesabat alətinə daxil olmaq, əsas mövzuda
+                                darboğazları.DevTools-da Lighthouse kimi pulsuz hesabat alətinə daxil olmaq, əsas
+                                mövzuda
+                                darboğazları.
+                            </p>
+                            <a class="read_more" href="detail.html" title="Read more">
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <span>daha çox oxu
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="detail.html" class="item-img position-relative">
+                            <img src="https://images.unsplash.com/photo-1700049749697-63beefb4915e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div>
+                            <h3>
+                                <a href="detail.html" class="post-name">
+                                    Sports Information
+                                </a>
+                            </h3>
+                            <div class="post_details">
+                                <li class="category">SPORT</li>
+                                <li class="date">Oktyabr 26, 2023</li>
+                            </div>
+                            <p>DevTools-da Lighthouse kimi pulsuz hesabat alətinə daxil olmaq, əsas mövzuda
+                                darboğazları.
+                            </p>
+                            <a class="read_more" href="detail.html" title="Read more">
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <span>daha çox oxu
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="detail.html" class="item-img position-relative">
+                            <img src="https://images.unsplash.com/photo-1699730132083-360f1d7a8f83?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxOHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div>
+                            <h3>
+                                <a href="detail.html" class="post-name">
+                                    Sports Information
+                                </a>
+                            </h3>
+                            <div class="post_details">
+                                <li class="category">SPORT</li>
+                                <li class="date">Oktyabr 26, 2023</li>
+                            </div>
+                            <p>DevTools-da Lighthouse kimi pulsuz hesabat alətinə daxil olmaq, əsas mövzuda
+                                darboğazları.
+                            </p>
+                            <a class="read_more" href="detail.html" title="Read more">
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <span>daha çox oxu
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="detail.html" class="item-img position-relative">
+                            <img src="https://images.unsplash.com/photo-1682686580024-580519d4b2d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D"
+                                alt="">
+                        </a>
+                        <div>
+                            <h3>
+                                <a href="detail.html" class="post-name">
+                                    Sports Information
+                                </a>
+                            </h3>
+                            <div class="post_details">
+                                <li class="category">SPORT</li>
+                                <li class="date">Oktyabr 26, 2023</li>
+                            </div>
+                            <p>DevTools-da Lighthouse kimi pulsuz hesabat alətinə daxil olmaq, əsas mövzuda
+                                darboğazları.
+                            </p>
+                            <a class="read_more" href="detail.html" title="Read more">
+                                <i class="fa-solid fa-chevron-right"></i>
+                                <span>daha çox oxu
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- left end -->
         <!-- layout right -->
-        <div class="sidebar-right">
+        <div class="sidebar-right container">
             <div class="sidebar-item">
                 <div class="sidebar-item_top">
                     YÜKLƏMƏLƏR
@@ -154,20 +279,31 @@
             </div>
         </div>
     </div>
+
     <!-- Footer -->
-    <div class="footer">
+    <footer class="footer">
         <div class="footer-bottom">
             <div>
-                <p>Copyright © 2023 | Təhsil və Yeni Texnologiyalar Araşdırma Assosiasiyası. Bütün Hüquqlar Qorunur.</p>
+                <p>Copyright © 2023 | Təhsil və Yeni Texnologiyalar Araşdırma Assosiasiyası. Bütün Hüquqlar
+                    Qorunur.</p>
             </div>
-            <div>
-                <a id="backToTop">YUXARA QAYIT</a>
+            <div id="backToTop">
+                <a>YUXARA QAYIT </a><i class="fa-solid fa-arrow-up"></i>
             </div>
         </div>
-    </div>
+    </footer>
 
+
+    <!-- OwlCarousel2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <!-- JS-files -->
     <script src="./js/global.js"></script>
+    <script src="./js/detail.js"></script>
 </body>
 
 </html>
