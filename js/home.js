@@ -24,8 +24,8 @@ $('.latest-articles-carousel').owlCarousel({
 ////
 $('.article-headings-carousel').owlCarousel({
     loop: true,
-    margin: 20,
-    nav: true,
+    margin: 10,
+    nav: false,
     dots: false,
     autoplay: true,
     autoplayTimeout: 4000,

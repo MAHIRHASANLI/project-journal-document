@@ -186,23 +186,46 @@ a {
   justify-content: flex-end;
 }
 
+.owl-prev {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  z-index: 99;
+}
+
+.owl-next {
+  position: absolute;
+  top: 25%;
+  right: 0;
+  z-index: 99;
+}
+
 .owl-prev,
 .owl-next {
-  display: flex;
+  display: flex !important;
   justify-content: center;
   align-items: center;
-  padding: 5px;
+  width: 55px;
+  height: 55px;
+  border-radius: 50% !important;
+  transition: 0.3s ease-in-out !important;
+  background-color: rgba(121, 121, 121, 0.7) !important;
 }
 .owl-prev:hover,
 .owl-next:hover {
-  background-color: transparent;
+  background-color: rgba(234, 82, 82, 0.8) !important;
 }
+
 .owl-prev span,
 .owl-next span {
-  margin: 0 20px;
-  font-size: 43px;
+  font-size: 40px;
   font-weight: 600;
-  color: rgba(26, 33, 61, 0.4);
+  color: white;
+}
+
+.owl-prev:hover span,
+.owl-next:hover span {
+  color: white !important;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .section-tittle h2 {
