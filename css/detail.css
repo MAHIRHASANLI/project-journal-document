@@ -25,6 +25,7 @@ a {
   font-size: 14px;
   font-weight: 600;
   color: #333;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 
@@ -36,6 +37,7 @@ a {
 .detail-head h4 {
   font-size: 20px;
   color: #024066;
+  font-family: "Roboto", sans-serif;
 }
 .detail-main {
   display: flex;
@@ -48,6 +50,7 @@ a {
 .detail-main-right p {
   color: #4f81bd;
   font-size: 15px;
+  font-family: "Roboto", sans-serif;
   color: #5a4e8c;
 }
 
@@ -65,7 +68,7 @@ a {
   margin: 0;
   padding: 0;
   font-size: 40px;
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #3c3b37;
   font-size: 36px;
   display: block;
@@ -101,6 +104,7 @@ a {
   margin-bottom: 6px;
   display: block;
   color: inherit;
+  font-family: "Roboto", sans-serif;
   transition: all 0.3s ease-out 0s;
 }
 
@@ -121,6 +125,7 @@ a {
   background: #ea5252;
   padding: 12px 15px 13px 14px;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .post_details li.date {
@@ -129,6 +134,7 @@ a {
   border-left: none;
   padding: 13px 14px 12px 13px;
   font-size: 13px;
+  font-family: "Roboto", sans-serif;
 }
 
 .detail--post-slider p {
@@ -139,11 +145,13 @@ a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "Roboto", sans-serif;
 }
 
 .read_more {
   color: #25282a;
   font-size: 12px;
+  font-family: "Roboto", sans-serif;
   margin-top: 10px;
 }
 
@@ -164,6 +172,7 @@ a {
   position: relative;
   margin: 0;
   margin-left: -4px;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   color: #25282a;
   font-size: 12px;

@@ -49,7 +49,7 @@ a {
   margin: 0;
   padding: 0;
   font-size: 40px;
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #3c3b37;
   font-size: 36px;
   display: block;
@@ -81,6 +81,7 @@ a {
   display: block;
   color: inherit;
   transition: all 0.3s ease-out 0s;
+  font-family: "Roboto", sans-serif;
 }
 
 #latest-articles h3 a:hover {
@@ -100,6 +101,7 @@ a {
   background: #ea5252;
   padding: 12px 15px 13px 14px;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 
 .post_details li.date {
@@ -108,6 +110,7 @@ a {
   border-left: none;
   padding: 13px 14px 12px 13px;
   font-size: 13px;
+  font-family: "Roboto", sans-serif;
 }
 
 #latest-articles p {
@@ -118,6 +121,7 @@ a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "Roboto", sans-serif;
 }
 
 .read_more {
@@ -129,6 +133,7 @@ a {
 .read_more:hover span {
   background: #ea5252;
   color: white;
+  font-family: "Roboto", sans-serif;
 }
 
 .read_more i {
@@ -145,6 +150,7 @@ a {
   margin-left: -4px;
   text-transform: uppercase;
   color: #25282a;
+  font-family: "Roboto", sans-serif;
   font-size: 12px;
   font-weight: 500;
   height: 100%;
@@ -218,6 +224,7 @@ a {
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
+  font-family: "Roboto", sans-serif;
 }
 
 .blog-content a {
@@ -228,6 +235,7 @@ a {
   text-decoration: none;
   outline: none;
   transition: linear 0.3s all;
+  font-family: "Roboto", sans-serif;
 }
 
 .blog-content a:hover {
@@ -249,6 +257,7 @@ a {
   text-decoration: none;
   outline: none;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
   text-transform: uppercase;
 }
 
@@ -258,6 +267,7 @@ a {
   float: left;
   font-family: arial;
   font-size: 12px;
+  font-family: "Roboto", sans-serif;
   display: inline;
 }
 /* 2 -  section */
@@ -276,6 +286,7 @@ a {
   color: #3c3b37;
   margin-bottom: 30px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .carousel-item-top p {
@@ -286,6 +297,7 @@ a {
   color: #3c3b37;
   font-weight: 400;
   text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
 .carousel-item-bottom {
@@ -311,6 +323,7 @@ a {
   color: #3c3b37;
   font-size: 18px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
   text-align: left;
 }
 
@@ -318,12 +331,14 @@ a {
   color: #6a6a6a;
   font-weight: 500;
   line-height: 1.5;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
 .carousel-control span {
   color: red;
   font-size: 24px;
+  font-family: "Roboto", sans-serif;
 }
 
 /* .article-headings */
@@ -345,6 +360,7 @@ a {
   border-radius: 40px;
   width: 200px;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   padding: 10px 20px;
   transition: linear 0.3s all;
   cursor: pointer;
@@ -354,6 +370,7 @@ a {
   font-weight: 600;
   color: #0b456b;
   transition: linear 0.3s all;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
 }
 
@@ -395,6 +412,7 @@ a {
 }
 .article--post a {
   text-decoration: underline;
+  font-family: "Roboto", sans-serif;
 }
 
 .article--post-header a {
@@ -402,18 +420,21 @@ a {
   font-weight: 700;
   transition: color 0.1s linear;
   font-size: 18px;
+  font-family: "Roboto", sans-serif;
 }
 .article--post-header a:hover {
   color: #0b456b;
 }
 .article--post-header h2 {
   margin-top: 10px;
+  font-family: "Roboto", sans-serif;
 }
 .article--post-header h2 a {
   color: #666;
   color: black;
   line-height: 37.992px;
   font-size: 28px;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
 
@@ -479,7 +500,7 @@ a {
 }
 
 .location-details h4 {
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #3c3b37;
   margin-top: 0px;
   font-style: normal;
@@ -490,6 +511,7 @@ a {
   color: #fff;
   font-size: 20px;
   font-weight: 600;
+  font-family: "Roboto", sans-serif;
   display: inline-block;
   margin-bottom: 2px;
 }
@@ -508,6 +530,7 @@ a {
   display: inline-block;
   font-size: 14px;
   visibility: visible;
+  font-family: "Roboto", sans-serif;
   opacity: 1;
 }
 
