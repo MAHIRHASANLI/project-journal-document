@@ -21,7 +21,7 @@
 
 /* ///////////// */
 
-$('.owl-carousel').owlCarousel({
+$('.latest-articles-carousel').owlCarousel({
     loop: true,
     margin: 30,
     nav: true,
@@ -46,6 +46,28 @@ $('.play').on('click', function () {
 })
 $('.stop').on('click', function () {
     owl.trigger('stop.owl.autoplay')
+})
+
+////
+$('.article-headings-carousel').owlCarousel({
+    loop: true,
+    margin: 30,
+    nav: true,
+    dots: false,
+    autoplay: false,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    responsive: {
+        0: {
+            items: 3
+        },
+        600: {
+            items: 4
+        },
+        1000: {
+            items: 5
+        }
+    }
 })
 
 

@@ -1,6 +1,6 @@
 body {
   background-color: rgb(235, 233, 225);
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-style: normal;
 }
@@ -9,7 +9,7 @@ body {
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 main {
@@ -23,9 +23,16 @@ main {
   padding: 10px 0;
 }
 
+.go-back--btn {
+  text-decoration: underline;
+  text-align: end;
+  margin-right: -30px;
+  color: #ea5252;
+}
+
 .register-form {
   background: #fff;
-  padding: 50px 60px 20px 50px;
+  padding: 20px 60px 20px 50px;
   box-shadow: 0px 10px 30px 0px rgba(13, 12, 13, 0.2);
   min-width: 700px;
   min-height: 100vh;
@@ -110,7 +117,8 @@ button {
 
 p,
 a {
-  font-family: "Jost", sans-serif;
+  /* font-family: "Jost", sans-serif; */
+  font-family: "Roboto", sans-serif;
   color: #6a6a6a;
   font-size: 16px;
   line-height: 30px;
@@ -133,7 +141,7 @@ a {
 
 @media only screen and (max-width: 760px) {
   .register-form {
-    padding: 40px 20px 20px 26px;
+    padding: 10px 20px 20px 26px;
     min-width: 90%;
   }
 
@@ -142,6 +150,9 @@ a {
     padding-bottom: 20px;
   }
 
+  .go-back--btn {
+    margin: 0px;
+  }
   .register-footer p {
     margin-bottom: 28px;
   }

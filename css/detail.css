@@ -1,3 +1,18 @@
+p,
+span,
+h2,
+h1,
+a,
+i,
+div {
+  font-family: "Roboto", sans-serif;
+}
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
 .sections {
   display: flex;
   justify-content: space-between;
@@ -42,7 +57,7 @@
 
 .detail-bottom p {
   font-size: 15px;
-  width: 90%;
+  width: 100%;
 }
 
 /* detail--post-slider */
@@ -191,6 +206,16 @@
     margin: 0;
     font-size: 31px;
   }
+
+  .detail-section {
+    width: 90%;
+  }
+
+  .detail-main {
+    gap: 50px;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 576px) {
@@ -198,8 +223,11 @@
     font-size: 24px;
     text-align: center;
   }
-}
-@media only screen and (max-width: 950px) {
+
+  .detail-section {
+    width: 90%;
+  }
+
   .detail-main {
     gap: 50px;
     justify-content: flex-start;
