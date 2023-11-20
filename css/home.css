@@ -386,7 +386,7 @@ a {
   /* border: 5px solid #0b456b; */
   /* transform: rotate(10deg); */
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .article--post img {
   width: 100%;

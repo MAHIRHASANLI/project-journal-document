@@ -1,26 +1,4 @@
-// console.log("Hello world");
-// const navLink = document.getElementsByClassName("nav-link");
-
-
-
-// window.onscroll = function () { scrollFunction() };
-
-// function scrollFunction() {
-//     if (document.body.scrollTop < 100 || document.documentElement.scrollTop < 100) {
-//         document.getElementById("navbar").style.top = "0px";
-//     }
-//     if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-//         document.getElementById("navbar").style.top = "0px";
-//     }
-//     // else if (document.body.scrollTop === 0 || document.documentElement.scrollTop === 0) document.getElementById("navbar").style.top = "0px"
-//     else {
-//         document.getElementById("navbar").style.top = "-1000px";
-//     }
-// }
-
-
-/* ///////////// */
-
+// latest-articles-carousel
 $('.latest-articles-carousel').owlCarousel({
     loop: true,
     margin: 30,
@@ -41,20 +19,15 @@ $('.latest-articles-carousel').owlCarousel({
         }
     }
 })
-$('.play').on('click', function () {
-    owl.trigger('play.owl.autoplay', [6000])
-})
-$('.stop').on('click', function () {
-    owl.trigger('stop.owl.autoplay')
-})
+
 
 ////
 $('.article-headings-carousel').owlCarousel({
     loop: true,
-    margin: 30,
+    margin: 20,
     nav: true,
     dots: false,
-    autoplay: false,
+    autoplay: true,
     autoplayTimeout: 4000,
     autoplayHoverPause: true,
     responsive: {
@@ -66,11 +39,19 @@ $('.article-headings-carousel').owlCarousel({
         },
         1000: {
             items: 5
+        },
+        1400: {
+            items: 6
         }
     }
 })
 
-
+$('.play').on('click', function () {
+    owl.trigger('play.owl.autoplay', [500000])
+})
+$('.stop').on('click', function () {
+    owl.trigger('stop.owl.autoplay')
+})
 
 // window.onscroll = function () { scrollFunction() };
 
