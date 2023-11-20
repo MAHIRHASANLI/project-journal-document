@@ -6,7 +6,6 @@ body {
   box-sizing: border-box;
 }
 
-
 p,
 span,
 h2,
@@ -66,7 +65,7 @@ div {
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.05em;
-  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
   transition: linear 0.4s all;
   color: white;
@@ -110,6 +109,7 @@ li.links::before {
   width: 0px;
   outline: none;
   transition: linear 0.3s all;
+  font-family: "Roboto", sans-serif;
 }
 
 .nav-mobile-header-search-div {
@@ -142,6 +142,7 @@ li.links::before {
   line-height: 22px;
   cursor: pointer;
   transition: linear 0.4s all;
+  font-family: "Roboto", sans-serif;
 }
 
 .buttons a:hover {
@@ -161,6 +162,7 @@ li.links::before {
   font-size: 14px;
   font-weight: 600;
   color: #333;
+  font-family: "Roboto", sans-serif;
   cursor: pointer;
 }
 
@@ -172,7 +174,6 @@ li.links::before {
 
 .sidebar-right {
   width: 20%;
-  /* margin-top: -54px; */
   margin-top: 5px;
   padding-left: 10px;
   position: sticky;
@@ -186,6 +187,7 @@ li.links::before {
   font-size: 1em;
   margin-bottom: 10px;
   padding-bottom: 1.5em;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar-item_top {
@@ -197,6 +199,7 @@ li.links::before {
   margin-bottom: 10px;
   padding: 8px 0 8px 8px;
   text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
 }
 
 .sidebar-item_bottom {
@@ -207,6 +210,7 @@ li.links::before {
   display: block;
   padding: 5px;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
   text-decoration: underline;
   transition: linear 0.3s all;
 }
@@ -227,11 +231,13 @@ li.links::before {
 .footer .text-title {
   color: #fff;
   border-left: 4px solid #ea5252;
+  font-family: "Roboto", sans-serif;
 }
 
 .footer .text-description {
   margin-top: 20px;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
   color: #ccc;
 }
 
@@ -239,6 +245,7 @@ li.links::before {
   text-align: left;
   font-size: 25px;
   margin: 0;
+  font-family: "Roboto", sans-serif;
   padding: 0 0 0 20px;
   height: 70px;
   line-height: 70px;
@@ -247,6 +254,7 @@ li.links::before {
 .footer .text-description li {
   border-color: #fff;
   float: left;
+  font-family: "Roboto", sans-serif;
   margin-right: 10px;
   margin-top: 10px;
   padding: 5px 0;
@@ -258,6 +266,7 @@ li.links::before {
 .footer .text-description a {
   color: #fff;
   font-size: 12px;
+  font-family: "Roboto", sans-serif;
   padding: 12px 13px;
   font-weight: 500;
   transition: linear 0.3s all;
@@ -303,11 +312,13 @@ li.links::before {
   display: inline-block;
   margin-bottom: 8px;
   margin-right: 10px;
+  font-family: "Roboto", sans-serif;
 }
 
 .listing-box-item .title {
   font-size: 20px;
   padding-bottom: 10px;
+  font-family: "Roboto", sans-serif;
 }
 .listing-box-item .read_more span {
   color: #ccc;
@@ -328,11 +339,13 @@ li.links::before {
   color: #ccc;
   margin: 0;
   font-size: 14px;
+  font-family: "Roboto", sans-serif;
 }
 .footer-bottom a {
   text-transform: uppercase;
   font-size: 12px;
   margin-right: 5px;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
   color: #ccc;
   cursor: pointer;
